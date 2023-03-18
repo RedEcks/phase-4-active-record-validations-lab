@@ -4,6 +4,6 @@ class Post < ApplicationRecord
     validates :summary, length: { maximum: 250 }
 
 
-    # validates :category, inclusion: {in: %("Fiction" || "Non-Fiction")}
+    validates :category, inclusion: ["Fiction","Non-Fiction"]
 
 end
